@@ -31,8 +31,16 @@ npm install
 After run:
 ```
 npm run babel
-```
 
+```
+importan: Follow order the execute
+```
+npm run build
+```
+the project run in server reload with nodemon
+```
+npm run dev
+```
 Finally run:
 ```
 npm start

@@ -1,9 +1,12 @@
 "use strict";
 
-var addNum = function addNum() {
-  var numOne = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 2;
-  var numbTwo = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 3;
-  return numOne + numbTwo;
-};
+var _configure = require("./configureExpress/configure");
 
-addNum();
+var message = "Begin with configure babel in node.js :)";
+console.info(message);
+
+var port = _configure.app.get('port');
+
+_configure.app.listen(port);
+
+console.log('http://localhost:' + port);
